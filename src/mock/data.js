@@ -54,11 +54,13 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Habit / Time Tracker',
+    info:
+      'I originally got this idea from utilizing an iOS shortcut for daily standup.  I wanted to be able to capture what I planned for the day as goals, but also keep track of how often I was successful versus when I was unable to complete a goal and why.',
+    info2:
+      'I began building this application using React, which after explaing my idea and brainstorming with my Mentor, we pulled functionality over and designed a new application BodyonBreak which we are collaborating on currently.',
+    url: 'https://github.com/J3ffJessie/todo-time-tracker',
+    repo: 'https://github.com/J3ffJessie/todo-time-tracker', // if no repo, the button will not show up
   },
 ];
 
