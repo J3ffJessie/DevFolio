@@ -23,8 +23,7 @@ export const aboutData = {
   paragraphTwo:
     'I am currently working on a Veteran assistance web application for finding a "buddy" to communicate with when they need someone who has been in their shoes to help them clear their minds.  I am also working with my mentor Michael(@muddybootscode) on a self-help style pomodoro web application to assist in time management and mental health awareness.',
   paragraphThree: '',
-  resume:
-    'https://docs.google.com/document/d/1CiaQb3psNgWsS5BZ7UFA56cYQK4Ov2elDTQAg-rR-W8/edit?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://docs.google.com/document/d/1CiaQb3psNgWsS5BZ7UFA56cYQK4Ov2elDTQAg-rR-W8/preview', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
