@@ -23,7 +23,8 @@ export const aboutData = {
   paragraphTwo:
     'I am currently working on a Veteran assistance web application for finding a "buddy" to communicate with when they need someone who has been in their shoes to help them clear their minds.  I am also working with my mentor Michael(@muddybootscode) on a self-help style pomodoro web application to assist in time management and mental health awareness.',
   paragraphThree: '',
-  resume: 'https://docs.google.com/document/d/1CiaQb3psNgWsS5BZ7UFA56cYQK4Ov2elDTQAg-rR-W8/preview', // if no resume, the button will not show up
+  resume:
+    'https://docs.google.com/document/d/1DTjY3qqGMcrQb6bpUujYqspubnExW-I1D4D6SAKajqQ/edit?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -52,14 +53,14 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'Habit / Time Tracker',
+    img: 'covid.jpg',
+    title: 'Covid-19 Statistical Tracker',
     info:
-      'I originally got this idea from utilizing an iOS shortcut for daily standup.  I wanted to be able to capture what I planned for the day as goals, but also keep track of how often I was successful versus when I was unable to complete a goal and why.',
+      'This project was a necessity for myself as well as just something to help me work and build my skills up.  I wanted to get statistical data without all the ads and extra fluff that was present with other sites presenting Covid Data.  So, working with an API from covidtracking.com I pulled the state level provided data that I felt was prevelant and pushed it into a table.',
     info2:
-      'I began building this application using React, which after explaing my idea and brainstorming with my Mentor, we pulled functionality over and designed a new application BodyonBreak which we are collaborating on currently.',
-    url: 'https://github.com/J3ffJessie/todo-time-tracker',
-    repo: 'https://github.com/J3ffJessie/todo-time-tracker', // if no repo, the button will not show up
+      'I built this project using Gatsby, React, Axios and deployed on Netlify.  I am currently implementing statistical charts to compare State level data to the National numbers by using React-Chart library to display visual graphs of the data being pulled in.',
+    url: 'https://j3covidtracker.netlify.app/',
+    repo: 'https://github.com/J3ffJessie/Covid-Tracker/tree/chart-build', // if no repo, the button will not show up
   },
 ];
 
