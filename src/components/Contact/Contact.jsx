@@ -1,35 +1,37 @@
-import React, { useContext } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import React from 'react';
+import emailjs from 'emailjs-com';
 
-const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+
+
+// import './ContactUs.css';
+
+export default function ContactUs() {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('profile_contact', 'contact_form', e.target, 'user_lZ35CmCgyGgFIqGgPeWoZ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
   return (
-    <section id="contact">
-      <Container>
-        <Title title="Contact" />
-        <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
-              {cta}
-            </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}`: 'Something Went Wrong!'}
-            >
-              {btn}
-            </a>
-          </div>
-        </Fade>
-      </Container>
-    </section>
+    <details>
+      <summary>Contact Me</summary>
+    <form className="contact-form" onSubmit={sendEmail}>
+      <input type="hidden" name="contact_number" />
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+    </details>
   );
-};
+}
 
-export default Contact;
