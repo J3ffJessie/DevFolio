@@ -1,4 +1,5 @@
 #contact {
+  background-color: $dark-blue-text;
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
@@ -6,31 +7,33 @@
   margin-top: -15rem;
   margin-bottom: -1px;
   color: $white-color;
+}
 
-  @include respond(tab-land) {
-    padding: 10rem 0;
-    clip-path: none;
-    margin-top: 0;
-    -webkit-clip-path: none;
-  }
+details {
+  height: auto;
+  width: 100vw;
+}
 
-  .contact-wrapper {
-    margin-top: 3.2rem;
-    padding: 0 2rem;
-    backface-visibility: hidden;
+summary {
+  font-weight: 900;
+  font-size: 5rem;
+  z-index: 1000;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
 
-    &__text {
-      margin-bottom: 2.5rem;
-    }
+form :is(label, input, textarea) {
+  font-size: 3rem;
+  font-weight: 400;
+}
 
-    &__text,
-    a {
-      font-size: 2.4rem;
-
-      // Responsive for contact text
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
-  }
+textarea {
+  margin-bottom: 15px;
 }
