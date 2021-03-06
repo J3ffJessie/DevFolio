@@ -47,7 +47,7 @@ export const projectsData = [
     info:
       'I wanted to utilize NodeJS and figured a ToDo List would be a fairly easy project to build out.  Utilizing NodeJS,  Express and MongoDB I was able to create a simple web application that my wife and I can use for around the house tasks. I deployed this using Heroku to understand how that was implemented and to go through that process for future knoweldge.',
     info2:
-      'Unfortunately do to unforseen circumstances (Apple Notes/Family Sharing) my To-Do list became boring to use and more of a hassle for my wife.  So, now it gets minimal use when I am using it to track project progress or something of that sort.',
+      '',
     url: 'https://j3-todo-app.herokuapp.com/',
     repo: 'https://github.com/J3ffJessie/To-Do-List', // if no repo, the button will not show up
   },

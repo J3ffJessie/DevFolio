@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import { Link } from 'react-scroll';
+
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -45,7 +47,12 @@ const About = () => {
                   {paragraphTwo ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
-                {resume && (
+                <span className="back-to-top">
+          <Link to="projects" smooth duration={1000}>
+            <i className="fa fa-angle-down fa-3x" aria-hidden="true" />
+          </Link>
+        </span>
+                {/* {resume && (
                   <span className="d-flex mt-3">
                     <a
                       target="_blank"
@@ -56,7 +63,7 @@ const About = () => {
                       Resume
                     </a>
                   </span>
-                )}
+                )} */}
               </div>
             </Fade>
           </Col>
