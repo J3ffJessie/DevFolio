@@ -8,13 +8,14 @@ import emailjs from 'emailjs-com';
 export default function ContactUs() {
 
   function sendEmail(e) {
-    // e.preventDefault();
+    e.preventDefault();
 
     emailjs.sendForm('profile_contact', 'contact_form', e.target, 'user_lZ35CmCgyGgFIqGgPeWoZ')
       .then((result) => {
       }, (error) => {
       });
       alert("Thank you for contacting me. I will reply as soon as possible.")
+      e.target.reset();
   }
 
   return (

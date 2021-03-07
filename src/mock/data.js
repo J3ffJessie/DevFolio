@@ -17,14 +17,14 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.png',
+  img: 'profile.jpg',
   paragraphOne:
-    'I am a passionate JavaScript Developer with a love for helping others.  I am a Veteran, and as such I hold my self to a very high standard of TeamWork, Communication, and Hard Work. I enjoy every aspect of Development and building an idea into reality.',
+    'I am a passionate JavaScript Developer with a love for helping others.  I am a Veteran, and as such I hold myself to a very high standard of Collaboration, Communication, and Hard Work. I enjoy every aspect of Development and building an idea into reality.',
   paragraphTwo:
-    'I am currently working on a Veteran assistance web application for finding a "buddy" to communicate with when they need someone who has been in their shoes to help them clear their minds.  I am also working with my mentor Michael(@muddybootscode) on a self-help style pomodoro web application to assist in time management and mental health awareness.',
+    'I am currently working on a Community Pay-It-Forward web application where small businesses can utilize a map of local businesses and do simple pay-it-forward style nice things to foster community in their local area.  I am also working with my mentor Michael(@muddybootscode) on a self-help style pomodoro web application to assist in time management and mental health awareness.',
   paragraphThree: '',
   resume:
-    'https://docs.google.com/document/d/1DTjY3qqGMcrQb6bpUujYqspubnExW-I1D4D6SAKajqQ/edit?usp=sharing', // if no resume, the button will not show up
+  '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -47,7 +47,7 @@ export const projectsData = [
     info:
       'I wanted to utilize NodeJS and figured a ToDo List would be a fairly easy project to build out.  Utilizing NodeJS,  Express and MongoDB I was able to create a simple web application that my wife and I can use for around the house tasks. I deployed this using Heroku to understand how that was implemented and to go through that process for future knoweldge.',
     info2:
-      'Unfortunately do to unforseen circumstances (Apple Notes/Family Sharing) my To-Do list became boring to use and more of a hassle for my wife.  So, now it gets minimal use when I am using it to track project progress or something of that sort.',
+      '',
     url: 'https://j3-todo-app.herokuapp.com/',
     repo: 'https://github.com/J3ffJessie/To-Do-List', // if no repo, the button will not show up
   },

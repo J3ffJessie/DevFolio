@@ -16,7 +16,7 @@ const Footer = () => {
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+            <i className="fa fa-angle-up fa-3x" aria-hidden="true" />
           </Link>
         </span>
         <div className="social-links">

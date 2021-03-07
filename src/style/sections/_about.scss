@@ -11,6 +11,8 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
+  box-shadow: none !important;
+  padding-top: 5rem;
 
   @include respond(tab-land) {
     height: 100%;
@@ -37,6 +39,7 @@
       }
     }
 
+
     &__info {
       display: flex;
       height: 100%;
@@ -48,7 +51,7 @@
       }
 
       &-text {
-        text-align: left;
+        text-align: center;
 
         @include respond(tab-port) {
           font-size: 1.5rem;
@@ -66,7 +69,7 @@
           padding: 0 0.3rem;
           margin: 0.3rem 0;
           line-height: 1.6;
-
+          box-shadow: none !important;
           @include respond(phone) {
             display: inline;
             margin: 0;
@@ -78,4 +81,9 @@
       }
     }
   }
+}
+
+.profile-image {
+  width: 25%;
+  height: 50%;
 }
