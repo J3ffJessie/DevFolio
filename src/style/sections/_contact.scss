@@ -30,8 +30,9 @@ form {
 }
 
 form :is(label, input, textarea) {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
+  width: 95vw;
 }
 
 textarea {
